@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+
+
+
+<head>
+	<meta charset="UTF-8"><style id="litespeed-ccss">ul{box-sizing:border-box}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,#7adcb4 0%,#00d082 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,#eee 0%,#a9b8c3 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,#ffceec 0%,#9896f0 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,#caf880 0%,#71ce7e 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,#020381 0%,#2874fc 100%);--wp--preset--duotone--dark-grayscale:url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:url('#wp-duotone-blue-red');--wp--preset--duotone--midnight:url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:url('#wp-duotone-blue-orange');--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:.44rem;--wp--preset--spacing--30:.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem}div.wpforms-container-full .wpforms-form *{background:0 0;border:0 none;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;float:none;font-size:100%;height:auto;letter-spacing:normal;list-style:none;outline:none;position:static;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;width:auto;visibility:visible;overflow:visible;margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;box-shadow:none}div.wpforms-container-full .wpforms-form input,div.wpforms-container-full .wpforms-form label{margin:0;border:0;padding:0;display:inline-block;vertical-align:middle;background:0 0;height:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}div.wpforms-container-full .wpforms-form input.wpforms-field-medium{max-width:60%}div.wpforms-container-full .wpforms-form .wpforms-field{padding:10px 0;clear:both}div.wpforms-container-full .wpforms-form .wpforms-field-label{display:block;font-weight:700;font-size:16px;float:none;line-height:1.3;margin:0 0 4px;padding:0;word-break:break-word;word-wrap:break-word}div.wpforms-container-full .wpforms-form .wpforms-field-label.wpforms-label-hide{position:absolute;top:-99999px;left:-99999px}div.wpforms-container-full .wpforms-form .wpforms-required-label{color:red;font-weight:400}div.wpforms-container-full .wpforms-form input[type=text]{background-color:#fff;box-sizing:border-box;border-radius:2px;color:#333;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;display:block;float:none;font-size:16px;font-family:inherit;border:1px solid #ccc;padding:6px 10px;height:38px;width:100%;line-height:1.3}div.wpforms-container-full .wpforms-form .wpforms-field-hp{display:none!important;position:absolute!important;left:-9000px!important}@media only screen and (max-width:600px){div.wpforms-container-full .wpforms-form .wpforms-field:not(.wpforms-field-phone):not(.wpforms-field-select-style-modern){overflow-x:hidden}div.wpforms-container-full .wpforms-form .wpforms-field>*{max-width:100%}div.wpforms-container-full .wpforms-form input.wpforms-field-medium{max-width:100%}}.fa,.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-angle-up:before{content:"\f106"}.fa-bars:before{content:"\f0c9"}.fa-instagram:before{content:"\f16d"}.fa-linkedin:before{content:"\f08c"}.fa-youtube:before{content:"\f167"}.fab{font-family:"Font Awesome 5 Brands"}.fab{font-weight:400}.fa{font-family:"Font Awesome 5 Free"}.fa{font-weight:900}.icon-phone{font-family:'simple-line-icons';speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-phone:before{content:"\e600"}html,body,div,span,h1,h2,a,img,i,ul,li,label,article,header,nav,section{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit}article,header,nav,section{display:block}html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}article,header,main,nav,section{display:block}a img{border:0}img{max-width:100%;height:auto}html{-ms-overflow-x:hidden;overflow-x:hidden}body{font-family:"Open Sans",sans-serif;font-size:14px;line-height:1.8;color:#4a4a4a;overflow-wrap:break-word;word-wrap:break-word}body{background-color:#fff}i{font-style:italic}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;font-size:14px!important;font-weight:400;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,header,main,nav,section{display:block}a{background-color:rgba(0,0,0,0)}img{border:0}svg:not(:root){overflow:hidden}input{color:inherit;font:inherit;margin:0}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}.container{width:1200px;max-width:90%;margin:0 auto}#wrap{position:relative}#main{position:relative}#main #content-wrap{padding-top:50px;padding-bottom:50px}.no-margins #main #content-wrap{padding-top:0;padding-bottom:0}.content-area{float:left;position:relative;width:72%;padding-right:30px;border-right-width:1px;border-style:solid;border-color:#f1f1f1}body.content-full-screen #content-wrap{width:100%!important;max-width:none!important;padding:0!important;border:0!important}.content-full-screen .content-area{float:none;width:100%!important;max-width:none!important;padding:0!important;margin:0!important;border:0!important}@media only screen and (max-width:959px){.container{max-width:90%}.content-area{float:none!important;width:100%;margin-bottom:40px;border:0}body:not(.separate-layout) .content-area{padding:0!important}.no-margins .content-area{margin-bottom:0}#main #content-wrap.container{width:auto!important}}@media only screen and (max-width:767px){#wrap{width:100%!important}}img{max-width:100%;height:auto;vertical-align:middle}.clr:after{content:"";display:block;visibility:hidden;clear:both;zoom:1;height:0}a{color:#333}a{text-decoration:none}h1,h2{font-weight:600;margin:0 0 20px;color:#333;line-height:1.4}h1{font-size:23px}h2{font-size:20px}ul{margin:15px 0 15px 20px}form input[type=text]{display:inline-block;min-height:40px;width:100%;font-size:14px;line-height:1.8;padding:6px 12px;vertical-align:middle;background-color:rgba(0,0,0,0);color:#333;border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px}input[type=text]{-webkit-appearance:none}form label{margin-bottom:3px}#top-bar-wrap{position:relative;background-color:#fff;font-size:12px;border-bottom:1px solid #f1f1f1;z-index:101}#top-bar{padding:8px 0}#top-bar-inner{position:relative}.top-bar-left{float:left}.top-bar-right{float:right}@media only screen and (max-width:767px){#top-bar{padding:20px 0}.top-bar-right{float:none;text-align:center}}@media screen and (max-width:782px){#top-bar-wrap{z-index:100}}@media only screen and (max-width:767px){#top-bar-content{float:none;text-align:center}}#top-bar-social ul{margin:0;padding:0;list-style:none}#top-bar-social li{float:left}#top-bar-social li a{display:block;float:left;font-size:14px;color:#bbb;padding:0 6px}#top-bar-social.top-bar-right li:last-child a{padding-right:0}#top-bar-social.top-bar-right{position:absolute;right:0;top:50%;height:20px;line-height:20px;margin-top:-10px}@media only screen and (max-width:767px){#top-bar-social{text-align:center}#top-bar-social.top-bar-right{position:inherit;left:auto;right:auto;float:none;height:auto;line-height:1.5em;margin-top:0}#top-bar-social li{float:none;display:inline-block}}#site-header{position:relative;width:100%;background-color:#fff;border-bottom:1px solid #f1f1f1;z-index:100}.no-header-border #site-header{border-bottom:none}#site-header-inner{position:relative;height:100%}#site-logo{float:left;height:100%;display:table}#site-logo #site-logo-inner{display:table-cell;vertical-align:middle;height:74px}#site-logo #site-logo-inner a{background-color:rgba(0,0,0,0)!important}#site-logo #site-logo-inner a img{width:auto;vertical-align:middle}#site-logo.has-responsive-logo .responsive-logo-link{display:none}@media only screen and (max-width:767px){#site-logo{margin-top:0!important;margin-bottom:0!important}}#site-navigation-wrap{float:right;position:relative;right:-15px}#site-navigation-wrap .dropdown-menu{list-style:none;margin:0;padding:0}#site-navigation-wrap .dropdown-menu>li{float:left;position:relative}#site-navigation-wrap .dropdown-menu>li>a{display:block;font-size:13px;line-height:74px;color:#555;padding:0 15px;letter-spacing:.6px}.sf-menu,.sf-menu *{margin:0;padding:0;list-style:none}.sf-menu li.menu-item{position:relative;white-space:nowrap;white-space:normal}.sf-menu>li{float:left}.sf-menu a.menu-link{display:block;position:relative;zoom:1}.dropdown-menu,.dropdown-menu *{margin:0;padding:0;list-style:none}.oceanwp-mobile-menu-icon{display:none;position:relative}.oceanwp-mobile-menu-icon.mobile-right{float:right}.oceanwp-mobile-menu-icon a{font-size:13px;line-height:74px;color:#555;padding-left:15px;letter-spacing:.6px}.oceanwp-mobile-menu-icon a:first-child{padding-left:0}.oceanwp-mobile-menu-icon a.mobile-menu .oceanwp-text,.oceanwp-mobile-menu-icon a.mobile-menu .oceanwp-close-text{padding-left:6px}.oceanwp-mobile-menu-icon a.mobile-menu .oceanwp-close-text{display:none}#mobile-dropdown{display:none;position:absolute;top:100%;left:0;width:100%;background-color:#fff;max-height:400px;overflow-y:auto;-webkit-box-shadow:0 2px 6px rgba(0,0,0,.1);-moz-box-shadow:0 2px 6px rgba(0,0,0,.1);box-shadow:0 2px 6px rgba(0,0,0,.1)}#mobile-dropdown ul{margin:0;list-style:none}#mobile-dropdown ul li{border-bottom:1px solid rgba(0,0,0,.035)}#mobile-dropdown ul li a{display:block;position:relative;padding:12px 40px;text-align:left}#scroll-top{display:none;opacity:0;position:fixed;right:20px;bottom:20px;width:40px;height:40px;line-height:40px;background-color:rgba(0,0,0,.4);color:#fff;font-size:18px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;border-radius:2px;text-align:center;z-index:100;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}@media only screen and (max-width:480px){#scroll-top{right:10px;bottom:10px;width:26px;height:26px;line-height:24px;font-size:14px}}@media only screen and (max-width:959px){body.default-breakpoint #site-logo.has-responsive-logo .custom-logo-link{display:none}body.default-breakpoint #site-logo.has-responsive-logo .responsive-logo-link{display:block}body.default-breakpoint #site-navigation-wrap{display:none}body.default-breakpoint .oceanwp-mobile-menu-icon{display:inline-flex}}.elementor-screen-only,.screen-reader-text{position:absolute;top:-10000em;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.elementor *,.elementor :after,.elementor :before{box-sizing:border-box}.elementor a{box-shadow:none;text-decoration:none}.elementor .elementor-background-overlay{height:100%;width:100%;top:0;left:0;position:absolute}.elementor-element{--flex-direction:initial;--flex-wrap:initial;--justify-content:initial;--align-items:initial;--align-content:initial;--gap:initial;--flex-basis:initial;--flex-grow:initial;--flex-shrink:initial;--order:initial;--align-self:initial;flex-basis:var(--flex-basis);flex-grow:var(--flex-grow);flex-shrink:var(--flex-shrink);order:var(--order);align-self:var(--align-self)}.elementor-align-center{text-align:center}.elementor-align-center .elementor-button{width:auto}:root{--page-title-display:block}.elementor-section{position:relative}.elementor-section .elementor-container{display:flex;margin-right:auto;margin-left:auto;position:relative}@media (max-width:1024px){.elementor-section .elementor-container{flex-wrap:wrap}}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px}.elementor-section.elementor-section-items-middle>.elementor-container{align-items:center}@media (min-width:768px){.elementor-section.elementor-section-height-full{height:100vh}.elementor-section.elementor-section-height-full>.elementor-container{height:100%}}.elementor-widget-wrap{position:relative;width:100%;flex-wrap:wrap;align-content:flex-start}.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap{display:flex}.elementor-widget-wrap>.elementor-element{width:100%}.elementor-widget{position:relative}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-column{position:relative;min-height:1px;display:flex}.elementor-column-gap-default>.elementor-column>.elementor-element-populated{padding:10px}@media (min-width:768px){.elementor-column.elementor-col-100{width:100%}}@media (max-width:767px){.elementor-column{width:100%}}.elementor-button{display:inline-block;line-height:1;background-color:#818a91;font-size:15px;padding:12px 24px;border-radius:3px;color:#fff;fill:#fff;text-align:center}.elementor-button:visited{color:#fff}.elementor-button-content-wrapper{display:flex;justify-content:center}.elementor-button-text{flex-grow:1;order:10;display:inline-block}.elementor-button span{text-decoration:inherit}.elementor-element{--swiper-theme-color:#000;--swiper-navigation-size:44px;--swiper-pagination-bullet-size:6px;--swiper-pagination-bullet-horizontal-gap:6px}:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}.elementor-kit-9{--e-global-color-primary:#6ec1e4;--e-global-color-secondary:#54595f;--e-global-color-text:#7a7a7a;--e-global-color-accent:#61ce70;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto Slab";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-element{--widgets-spacing:20px}@media (max-width:1024px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:1024px}}@media (max-width:767px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:767px}}.elementor-2 .elementor-element.elementor-element-wjtnaha:not(.elementor-motion-effects-element-type-background){background-image:url("wp-content/uploads/2023/03/banner.webp");background-position:top center;background-repeat:no-repeat;background-size:cover}.elementor-2 .elementor-element.elementor-element-wjtnaha>.elementor-background-overlay{background-color:#000;opacity:.3}.elementor-2 .elementor-element.elementor-element-wqtjnjo{text-align:center}.elementor-2 .elementor-element.elementor-element-wqtjnjo .elementor-heading-title{color:#fff;font-family:"Arial",Sans-serif;font-size:88px;font-weight:700;text-transform:uppercase;line-height:1.1em;letter-spacing:2.5px}.elementor-2 .elementor-element.elementor-element-a1b9dd3{text-align:center}.elementor-2 .elementor-element.elementor-element-a1b9dd3 .elementor-heading-title{color:#fff;font-family:"Arial",Sans-serif;font-size:40px;font-weight:800;text-transform:uppercase;line-height:1.1em;letter-spacing:2.5px}.elementor-2 .elementor-element.elementor-element-wurqgro{text-align:center}.elementor-2 .elementor-element.elementor-element-wurqgro .elementor-heading-title{color:#fff;font-family:"Arial",Sans-serif;font-size:30px;text-transform:uppercase;letter-spacing:1.5px}.elementor-2 .elementor-element.elementor-element-uyvuxnj .elementor-button{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1px;fill:#fff;color:#fff;background-color:#a64193;border-radius:5px;padding:18px 40px}.elementor-2 .elementor-element.elementor-element-uyvuxnj>.elementor-widget-container{margin:30px 0 0}@media (min-width:1025px){.elementor-2 .elementor-element.elementor-element-wjtnaha:not(.elementor-motion-effects-element-type-background){background-attachment:fixed}}@media (max-width:767px){.elementor-2 .elementor-element.elementor-element-wjtnaha{padding:150px 0 60px}.elementor-2 .elementor-element.elementor-element-wqtjnjo .elementor-heading-title{font-size:30px}.elementor-2 .elementor-element.elementor-element-a1b9dd3 .elementor-heading-title{font-size:14px;line-height:1.5em}.elementor-2 .elementor-element.elementor-element-wurqgro .elementor-heading-title{font-size:18px}}.fa,.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-angle-up:before{content:"\f106"}.fa-bars:before{content:"\f0c9"}.fa-instagram:before{content:"\f16d"}.fa-linkedin:before{content:"\f08c"}.fa-youtube:before{content:"\f167"}.fa{font-family:"Font Awesome 5 Free";font-weight:900}@media only screen and (max-width:767px){#top-bar-social{display:inline-flex!important;float:right!important}#top-bar-content{display:inline-flex!important}#top-bar{padding:5px 0}#site-header{position:fixed;top:32px}#top-bar-wrap{position:fixed;width:100%}}form input[type=text]{border-radius:10px}body div.wpforms-container-full .wpforms-form input[type=text]{border-radius:10px}form input[type=text]{border-color:#eee}body div.wpforms-container-full .wpforms-form input[type=text]{border-color:#eee}form input[type=text]{background-color:#f5f5f5}body div.wpforms-container-full .wpforms-form input[type=text]{background-color:#f5f5f5}#site-logo #site-logo-inner{height:40px}#site-navigation-wrap .dropdown-menu>li>a,.oceanwp-mobile-menu-icon a{line-height:40px}#site-header{background-color:#000}#site-logo #site-logo-inner a img{max-width:150px}@media (max-width:480px){#site-logo #site-logo-inner a img{max-width:100px}}#site-navigation-wrap .dropdown-menu>li>a,.oceanwp-mobile-menu-icon a{color:#fff}#top-bar-wrap{background-color:#7d2c6e}#top-bar-wrap{border-color:#ffd500}#top-bar-wrap{color:#fff}#top-bar-content a{color:#fff}#top-bar-social li a{color:#fff}body{font-family:Oxygen;font-size:15px}h1,h2{font-family:Oswald}#top-bar-content{font-size:13px;letter-spacing:.6px}#site-navigation-wrap .dropdown-menu>li>a,.oceanwp-mobile-menu-icon a{font-weight:600;letter-spacing:.3px;text-transform:uppercase}.elementor-heading-title{padding:0;margin:0;line-height:1}</style><link rel="preload" data-asynced="1" data-optimized="2" as="style" onload="this.onload=null;this.rel='stylesheet'" href="wp-content/litespeed/css/46a2a8724b75a7e0a4e9faefd72bca3deb23.css?ver=715a2" /><script>!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);</script>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="pingback" href="xmlrpc.php">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v22.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>kinza home decore</title>
+	
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.galaxywallpapers.in/","url":"https://www.galaxywallpapers.in/","name":"Galaxy Wallpapers","isPartOf":{"@id":"https://www.galaxywallpapers.in/#website"},"about":{"@id":"https://www.galaxywallpapers.in/#organization"},"primaryImageOfPage":{"@id":"https://www.galaxywallpapers.in/#primaryimage"},"image":{"@id":"https://www.galaxywallpapers.in/#primaryimage"},"thumbnailUrl":"https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21.webp","datePublished":"2015-03-19T17:58:30+00:00","dateModified":"2023-04-21T01:45:03+00:00","description":"CREATORS OF THE MOSTBEAUTIFUL WALLPAPERS! DECOR YOUR HOME TODAY","breadcrumb":{"@id":"https://www.galaxywallpapers.in/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.galaxywallpapers.in/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.galaxywallpapers.in/#primaryimage","url":"https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21.webp","contentUrl":"https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21.webp","width":394,"height":485},{"@type":"BreadcrumbList","@id":"https://www.galaxywallpapers.in/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.galaxywallpapers.in/#website","url":"https://www.galaxywallpapers.in/","name":"Galaxy Wallpapers","description":"CREATORS OF THE MOST BEAUTIFUL WALLPAPERS!","publisher":{"@id":"https://www.galaxywallpapers.in/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.galaxywallpapers.in/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.galaxywallpapers.in/#organization","name":"Galaxy Wallpapers","url":"https://www.galaxywallpapers.in/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.galaxywallpapers.in/#/schema/logo/image/","url":"https://www.galaxywallpapers.in/wp-content/uploads/2023/03/cropped-galaxy-logo-1.jpeg","contentUrl":"https://www.galaxywallpapers.in/wp-content/uploads/2023/03/cropped-galaxy-logo-1.jpeg","width":957,"height":350,"caption":"Galaxy Wallpapers"},"image":{"@id":"https://www.galaxywallpapers.in/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel="alternate" type="application/rss+xml" title="Galaxy Wallpapers &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Galaxy Wallpapers &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Galaxy Wallpapers &raquo; Home Comments Feed" href="home-2/feed/index.html" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.galaxywallpapers.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed6bfe.json?url=https%3A%2F%2Fwww.galaxywallpapers.in%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedc58a?url=https%3A%2F%2Fwww.galaxywallpapers.in%2F&amp;format=xml" />
+<meta name="generator" content="Elementor 3.11.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="icon" href="wp-content/uploads/2023/03/cropped-cropped-galaxy-logo-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2023/03/cropped-cropped-galaxy-logo-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2023/03/cropped-cropped-galaxy-logo-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/cropped-cropped-galaxy-logo-1-270x270.jpeg" />
+		
+		<!-- OceanWP CSS -->
+</head>
+
+<body class="home page-template-default page page-id-2 wp-custom-logo wp-embed-responsive oceanwp-theme dropdown-mobile no-header-border default-breakpoint content-full-screen has-topbar page-header-disabled has-breadcrumbs no-margins elementor-default elementor-kit-9 elementor-page elementor-page-2" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	
+	
+	<div id="outer-wrap" class="site clr">
+
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+		
+		<div id="wrap" class="clr">
+
+			
+
+<div id="top-bar-wrap" class="clr">
+
+	<div id="top-bar" class="clr container">
+
+		
+		<div id="top-bar-inner" class="clr">
+
+			
+	<div id="top-bar-content" class="clr has-content top-bar-left">
+
+		
+		
+			
+				<span class="topbar-content">
+
+					<i class="icon-phone" style="margin: 0 7px 0 0;color: #fff"></i> <a href="tel:+91 88088 51652">+91 88088 51652</a>
+					<i class="icon-phone" style="margin: 0 7px 0 0;color: #fff"></i> <a href="tel:+91 9192302328">+91 9192302328</a>
+					<i class="icon-phone" style="margin: 0 7px 0 0;color: #fff"></i> <a href="tel:+91 70421 81989">+91 70421 81989</a>
+				</span>
+
+				
+	</div><!-- #top-bar-content -->
+
+
+
+<div id="top-bar-social" class="clr top-bar-right">
+
+	<ul class="clr" aria-label="Social links">
+
+		<li class="oceanwp-instagram"><a href="https://www.instagram.com/shop_at_galaxywallpapers/" aria-label="Instagram (opens in a new tab)" target="_blank" rel="noopener noreferrer"><i class=" fab fa-instagram" aria-hidden="true" role="img"></i></a></li>
+	</ul>
+
+</div><!-- #top-bar-social -->
+
+		</div><!-- #top-bar-inner -->
+
+		
+	</div><!-- #top-bar -->
+
+</div><!-- #top-bar-wrap -->
+
+
+			
+<header id="site-header" class="minimal-header clr" data-height="40" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+	
+					
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr has-responsive-logo" itemscope itemtype="https://schema.org/Brand" >
+
+	
+	<div id="site-logo-inner" class="clr">
+
+		<a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><h3 style="color: white; margin-top: 15px;">KINZA HOME DECORE</h3></a><a href="index.html" class="responsive-logo-link" rel="home"><img src="wp-content/uploads/2023/03/cropped-galaxy-logo-1.jpg" class="responsive-logo" width="957" height="350" alt="" /></a>
+	</div><!-- #site-logo-inner -->
+
+	
+	
+</div><!-- #site-logo -->
+
+			<div id="site-navigation-wrap" class="clr">
+			
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" >
+
+				<ul id="menu-main-menu" class="main-menu dropdown-menu sf-menu"><li id="menu-item-350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-350"><a href="index.html" class="menu-link"><span class="text-wrap">Home</span></a></li><li id="menu-item-351" class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-351"><a href="#collections" class="menu-link"><span class="text-wrap">Collections</span></a></li><li id="menu-item-352" class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-352"><a href="#gallery" class="menu-link"><span class="text-wrap">Gallery</span></a></li><li id="menu-item-353" class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-353"><a href="#contact" class="menu-link"><span class="text-wrap">Contact</span></a></li></ul>
+			</nav><!-- #site-navigation -->
+
+			
+			
+					</div><!-- #site-navigation-wrap -->
+			
+		
+	
+				
+	
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+		<a href="#" class="mobile-menu"  aria-label="Mobile Menu">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+								<span class="oceanwp-text">Menu</span>
+				<span class="oceanwp-close-text">Close</span>
+						</a>
+
+		
+		
+		
+	</div><!-- #oceanwp-mobile-menu-navbar -->
+
+	
+
+			</div><!-- #site-header-inner -->
+
+			
+<div id="mobile-dropdown" class="clr" >
+
+	<nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+
+		<ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-350"><a href="index.html" aria-current="page">Home</a></li>
+<li class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-351"><a href="#collections">Collections</a></li>
+<li class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-352"><a href="#gallery">Gallery</a></li>
+<li class="local-scroll menu-item menu-item-type-custom menu-item-object-custom menu-item-353"><a href="#contact">Contact</a></li>
+</ul>
+	</nav>
+
+</div>
+
+			
+			
+		
+		
+</header><!-- #site-header -->
+
+
+			
+			<main id="main" class="site-main clr"  role="main">
+
+				
+	
+	<div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article class="single-page-article clr">
+
+	
+<div class="entry clr" itemprop="text">
+
+	
+			<div data-elementor-type="wp-post" data-elementor-id="2" class="elementor elementor-2">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-wjtnaha elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="wjtnaha" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-rrzpsbl" data-id="rrzpsbl" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-wqtjnjo elementor-widget elementor-widget-heading" data-id="wqtjnjo" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">KINZA HOME DECORE</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a1b9dd3 elementor-widget elementor-widget-heading" data-id="a1b9dd3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default"><span style="font-weight:400;letter-spacing:0.5rem;">Creators of the most <br>beautiful wallpapers!</span></h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-wurqgro elementor-widget elementor-widget-heading" data-id="wurqgro" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Decor your home today</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-uyvuxnj elementor-align-center elementor-widget elementor-widget-button" data-id="uyvuxnj" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Make an appointment</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-nzqyrqu elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="nzqyrqu" data-element_type="section" id="collections">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-convgtc" data-id="convgtc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a93f4bd elementor-widget elementor-widget-heading" data-id="a93f4bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Brighten up your home with Galaxy wallpapers!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0c9d700 elementor-widget elementor-widget-text-editor" data-id="0c9d700" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p class="font_8">At Galaxy wallpapers, you can find the perfect wallpaper for any room in your home. We offer a wide range of styles from classic to contemporary, in over 1000 patterns. Whether you&#8217;re looking for something subtle or something bold, you&#8217;ll find it here.</p><p class="font_8">Plus, we&#8217;re always available to answer any questions you have over <b> contact number </b>. So start browsing today and find the wallpaper of your dreams!</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-712faca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="712faca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5ad9cb4" data-id="5ad9cb4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-a731a66 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a731a66" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-01546cd" data-id="01546cd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a63dac0 elementor-widget-mobile__width-initial elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="a63dac0" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#"><img decoding="async" width="394" height="485" src="wp-content/uploads/2023/03/21.webp" class="attachment-full size-full wp-image-492" alt="" srcset="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21.webp 394w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21-244x300.webp 244w" sizes="(max-width: 394px) 100vw, 394px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="#">The Room Collection</a></h3><p class="elementor-image-box-description">Shop wallpapers for beautiful bedrooms, living rooms, office, shops etc.</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3f1babb" data-id="3f1babb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4596823 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="4596823" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#"><img decoding="async" width="394" height="485" src="wp-content/uploads/2023/03/22.webp" class="attachment-full size-full wp-image-491" alt="" srcset="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/22.webp 394w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/22-244x300.webp 244w" sizes="(max-width: 394px) 100vw, 394px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="#">The Kids Collection</a></h3><p class="elementor-image-box-description">Cute kids room collection to design bedrooms and play areas for your little ones.</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2e8c1e9" data-id="2e8c1e9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1ff4ef7 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="1ff4ef7" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#"><img decoding="async" width="394" height="485" src="wp-content/uploads/2023/03/23.webp" class="attachment-full size-full wp-image-490" alt="" srcset="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/23.webp 394w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/23-244x300.webp 244w" sizes="(max-width: 394px) 100vw, 394px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="#">The Premium Collection</a></h3><p class="elementor-image-box-description">The 'Sukoon' collection tells tales through its picturesque nuances and visual grandeur.</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-977783f" data-id="977783f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e8289aa elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="e8289aa" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#"><img decoding="async" width="394" height="485" src="wp-content/uploads/2023/03/21.webp" class="attachment-full size-full wp-image-492" alt="" srcset="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21.webp 394w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/21-244x300.webp 244w" sizes="(max-width: 394px) 100vw, 394px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="#">The Nature collection</a></h3><p class="elementor-image-box-description">Shop wallpapers for beautiful bedrooms, living rooms, office, shops etc.</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3c1a846 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c1a846" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e978712" data-id="e978712" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-e8f6c82 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e8f6c82" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0d554b2" data-id="0d554b2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e08d800 elementor-widget elementor-widget-image" data-id="e08d800" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="796" height="118" src="wp-content/uploads/2023/03/26.webp" class="attachment-large size-large wp-image-545" alt="" srcset="https://www.galaxywallpapers.in/wp-content/uploads/2023/03/26.webp 796w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/26-300x44.webp 300w, https://www.galaxywallpapers.in/wp-content/uploads/2023/03/26-768x114.webp 768w" sizes="(max-width: 796px) 100vw, 796px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f63b938 elementor-widget elementor-widget-text-editor" data-id="f63b938" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p class="font_8"><span class="color_15">What makes our wallpaper special is that it is custom-made to fit the exact size of your wall, ensuring a perfect fit every time. Additionally, our wallpaper comes in a wide range of colors that are vibrant and clear, adding a beautiful touch to any room.</span></p><p class="font_8"><span class="color_15">We offer an 8-year color warranty for indoor use, and our non-toxic wallpapers are environmentally friendly. We provide help finding professional installers in major cities in India to make the process stress-free. Trust Lifencolors for high-quality, unique wallpaper that meets your design needs.</span></p><p class="font_8"><span class="color_15">We are confident that our wallpapers will stand the test of time, and we stand behind the quality of our products. Our wallpapers are non-toxic, making them safe for indoor use, and we are proud to be a carbon-neutral company, ensuring that we are doing our part to protect the environment.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-560bc09 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="560bc09" data-element_type="section" id="gallery">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1501a5" data-id="a1501a5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d09ee04 elementor-widget elementor-widget-heading" data-id="d09ee04" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Check out our top-selling wallpaper designs to give your living spaces a unique and distinctive touch.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4d81847 elementor-widget elementor-widget-heading" data-id="4d81847" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Best Sellers</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2d40376 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="2d40376" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/2.webp" alt="2" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/1.webp" alt="1" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/5.webp" alt="5" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/4.webp" alt="4" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/3.webp" alt="3" /></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6463820 elementor-widget elementor-widget-heading" data-id="6463820" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Kids Wallpapers</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e4b2c55 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="e4b2c55" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/9.webp" alt="9" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/10.webp" alt="10" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/6.webp" alt="6" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/7.webp" alt="7" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/8.webp" alt="8" /></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cdca4a9 elementor-widget elementor-widget-heading" data-id="cdca4a9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Premium Collection</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-735558b elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="735558b" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/11.webp" alt="11" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/12.webp" alt="12" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/15.webp" alt="15" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/14.webp" alt="14" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/13.webp" alt="13" /></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-194cf74 elementor-widget elementor-widget-heading" data-id="194cf74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Office Collection</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae60c18 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="ae60c18" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/17.webp" alt="17" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/16.webp" alt="16" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/20.webp" alt="20" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/19.webp" alt="19" /></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2023/03/18.webp" alt="18" /></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-matghiw elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="matghiw" data-element_type="section" id="pricing">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-lgwfnfo" data-id="lgwfnfo" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-be9df5d elementor-widget elementor-widget-heading" data-id="be9df5d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Want customization?</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-pzfzyjb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="pzfzyjb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fvivyag" data-id="fvivyag" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-djcdipc elementor-widget elementor-widget-spacer" data-id="djcdipc" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-tplkbwh elementor-widget elementor-widget-heading" data-id="tplkbwh" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Customization is easy with </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-pzmtrgc elementor-widget elementor-widget-heading" data-id="pzmtrgc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">kinza home decore wallpapers</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ef38164 elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="ef38164" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Contact us</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bqevfph elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bqevfph" data-element_type="section" id="contact">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-loqiwbf" data-id="loqiwbf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-ymsodvz elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ymsodvz" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-koenvsq" data-id="koenvsq" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-804c9ed elementor-widget elementor-widget-heading" data-id="804c9ed" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Contact us for design consultation</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-88ac71d elementor-widget elementor-widget-text-editor" data-id="88ac71d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p class="font_7"><span class="color_15">We specialize in creating custom designs to fit your needs. We can adjust the size and color of many of our existing designs, or create a new custom design just for you.</span></p><p class="font_7"><span class="color_15">Whether you have a specific vision in mind or need help creating something from scratch, our team of experienced designers can make it happen.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-wkwivet" data-id="wkwivet" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8cbf97e elementor-widget elementor-widget-wpforms" data-id="8cbf97e" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-380"><form id="wpforms-form-380" class="wpforms-validate wpforms-form" data-formid="380" method="post" enctype="multipart/form-data" action="#" data-token="ece728768c6a3bb420e6beffe29a0ebd"><noscript class="wpforms-error-noscript"></noscript><div class="wpforms-field-container"><div id="wpforms-380-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-380-field_0">Your Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-380-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" placeholder="Your Name*" required></div><div id="wpforms-380-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-380-field_1">Your Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-380-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Your Email*" spellcheck="false" required></div><div id="wpforms-380-field_3-container" class="wpforms-field wpforms-field-number" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-380-field_3">Phone</label><input type="number" pattern="\d*" id="wpforms-380-field_3" class="wpforms-field-large" name="wpforms[fields][3]" placeholder="Phone*" ></div><div id="wpforms-380-field_4-container" class="wpforms-field wpforms-field-name" data-field-id="4"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-380-field_4">City <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-380-field_4" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][4]" placeholder="City*" required></div></div><!-- .wpforms-field-container --><div class="wpforms-field wpforms-field-hp"><label for="wpforms-380-field-hp" class="wpforms-field-label">Phone</label><input type="text" name="wpforms[hp]" id="wpforms-380-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="380"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="2"><button type="submit" name="wpforms[submit]" id="wpforms-submit-380" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Send Message" aria-live="assertive" value="wpforms-submit">Send Message</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-001a5f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="001a5f6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c853678" data-id="c853678" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f3dd138 elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="f3dd138" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-" >
+				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<span class="elementor-icon-box-title">
+					<span  >
+											</span>
+				</span>
+									<p class="elementor-icon-box-description">
+						S/O: Shamsuzzoha, 162/244/5/1, Astabal, Charbag , Maulviganj, Lucknow , Aminabad Park , Uttar Pradesh , 226018				</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7c8b3aa" data-id="7c8b3aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3a31df0 elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3a31df0" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="tel:+91 88088 51652">
+				<i aria-hidden="true" class="fas fa-phone"></i>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<span class="elementor-icon-box-title">
+					<a href="tel:9192302328" >
+											</a>
+				</span>
+									<p class="elementor-icon-box-description">
+						+91 9192302328				</p>
+						<p class="elementor-icon-box-description">
+							+91 70421 81989			</p>
+							<p class="elementor-icon-box-description">
+								+91 88088 51652		</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e1b877a" data-id="e1b877a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ea9a043 elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="ea9a043" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="mailto:demo@gmail.com">
+				<i aria-hidden="true" class="fas fa-envelope"></i>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<span class="elementor-icon-box-title">
+					<a href="mailto:%20shopatgalaxywallpapers@gmail.com" >
+											</a>
+				</span>
+									<p class="elementor-icon-box-description">
+						demo@gmail.com					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-nihrxxu elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="nihrxxu" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-qpqpyni" data-id="qpqpyni" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-kpseolw elementor-widget elementor-widget-google_maps" data-id="kpseolw" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.593309576349!2d80.91935908194726!3d26.85288470255625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdbec5555553%3A0x565960043cd3c18e!2s162%2F244%2C%20Astabal%2C%20Maulviganj%2C%20Charbagh%2C%20Lucknow%2C%20Uttar%20Pradesh%20226018!5e0!3m2!1sen!2sin!4v1715231560097!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+	
+</div>
+
+</article>
+
+				
+			</div><!-- #content -->
+
+			
+		</div><!-- #primary -->
+
+		
+	</div><!-- #content-wrap -->
+
+	
+
+	</main><!-- #main -->
+
+	
+	
+	
+		
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="#" role="contentinfo">
+
+	
+	<div id="footer-inner" class="clr">
+
+		
+
+<div id="footer-bottom" class="clr no-footer-nav">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				2024 Kinza home decore  		</div><!-- #copyright -->
+
+			
+	</div><!-- #footer-bottom-inner -->
+
+	
+</div><!-- #footer-bottom -->
+
+
+	</div><!-- #footer-inner -->
+
+	
+</footer><!-- #footer -->
+
+	
+	
+</div><!-- #wrap -->
+
+
+</div><!-- #outer-wrap -->
+
+
+
+<a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
+
+
+
+
+<script src="wp-includes/js/imagesloaded.minbb93.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script id="oceanwp-main-js-extra">
+var oceanwpLocalize = {"nonce":"e04b84e8f1","isRTL":"","menuSearchStyle":"disabled","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customScrollOffset":"0","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"https:\/\/www.galaxywallpapers.in\/wp-admin\/admin-ajax.php","oe_mc_wpnonce":"a93031e4e7"};
+</script>
+<script src="wp-content/themes/oceanwp/assets/js/theme.minccfb.js?ver=3.4.2" id="oceanwp-main-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/drop-down-mobile-menu.minccfb.js?ver=3.4.2" id="oceanwp-drop-down-mobile-menu-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.minccfb.js?ver=3.4.2" id="ow-magnific-popup-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/ow-lightbox.minccfb.js?ver=3.4.2" id="oceanwp-lightbox-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.minccfb.js?ver=3.4.2" id="ow-flickity-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/ow-slider.minccfb.js?ver=3.4.2" id="oceanwp-slider-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/scroll-effect.minccfb.js?ver=3.4.2" id="oceanwp-scroll-effect-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/scroll-top.minccfb.js?ver=3.4.2" id="oceanwp-scroll-top-js"></script>
+<script src="wp-content/themes/oceanwp/assets/js/select.minccfb.js?ver=3.4.2" id="oceanwp-select-js"></script>
+<script src="wp-content/plugins/ocean-social-sharing/assets/js/social1717.js?ver=2.0.6" id="oss-social-share-script-js"></script>
+<script src="wp-content/plugins/elementor/assets/js/webpack.runtime.mina5bd.js?ver=3.11.3" id="elementor-webpack-runtime-js"></script>
+<script src="wp-content/plugins/elementor/assets/js/frontend-modules.mina5bd.js?ver=3.11.3" id="elementor-frontend-modules-js"></script>
+<script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.11.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"landing-pages":true,"kit-elements-defaults":true},"urls":{"assets":"https:\/\/www.galaxywallpapers.in\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2,"title":"Galaxy%20Wallpapers","excerpt":"","featuredImage":false}};
+</script>
+<script src="wp-content/plugins/elementor/assets/js/frontend.mina5bd.js?ver=3.11.3" id="elementor-frontend-js"></script>
+<script src="wp-includes/js/underscore.mind584.js?ver=1.13.4" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="wp-includes/js/wp-util.mine63c.js?ver=6.5.2" id="wp-util-js"></script>
+<script id="wpforms-elementor-js-extra">
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src="wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min5068.js?ver=1.8.7.2" id="wpforms-elementor-js"></script>
+<script src="wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min7e9d.js?ver=1.19.5" id="wpforms-validation-js"></script>
+<script src="wp-content/plugins/wpforms-lite/assets/lib/mailcheck.mincfa9.js?ver=1.1.2" id="wpforms-mailcheck-js"></script>
+<script src="wp-content/plugins/wpforms-lite/assets/lib/punycode.min8a54.js?ver=1.0.0" id="wpforms-punycode-js"></script>
+<script src="wp-content/plugins/wpforms-lite/assets/js/share/utils.min5068.js?ver=1.8.7.2" id="wpforms-generic-utils-js"></script>
+<script src="wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min5068.js?ver=1.8.7.2" id="wpforms-js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_minimum_price":"Amount entered is less than the required minimum.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/www.galaxywallpapers.in\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/www.galaxywallpapers.in\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","page_title":"Home","page_id":"2","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number."}
+/* ]]> */
+</script>
+</body>
+
+<!-- Mirrored from www.galaxywallpapers.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 16:29:33 GMT -->
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 6.1 on 2024-05-06 16:53:48 -->
+<!-- QUIC.cloud CCSS loaded ✅ /ccss/98b4f09673b26158cd0101bdc9463ed0.css -->
